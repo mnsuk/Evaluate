@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.ibm.dltj.jfst.stringNormalizer">
+      <normalizer
+            class="com.mnsuk.castudio.Evaluate"
+            name="mnsuk.Evaluate">
+            <description>Returns a boolean valued string (true or false) that is the result of evaluating the specified expression.</description>
+         <arguments
+               maxLength="5"
+               minLength="1">
+                              <description>The first argument must be an expression string, subsequent arguments should be the features to substitute into the variables specified in the expression. Up to four variables are supported.</description>
+               
+         </arguments>
+      </normalizer>
+   </extension>
+
+</plugin>
